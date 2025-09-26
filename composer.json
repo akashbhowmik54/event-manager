@@ -1,0 +1,13 @@
+{
+    "name": "akashbhowmik54/ultimate-event-manager",
+    "description": "Custom WordPress Event Manager Plugin",
+    "type": "wordpress-plugin",
+    "license": "GPL-2.0-or-later",
+    "autoload": {
+        "psr-4": {
+            "UltimateEventManager\\": "src/"
+        }
+    },
+    "minimum-stability": "stable",
+    "require": {}
+}
