@@ -1,5 +1,5 @@
 <?php
-namespace MemberDirectory\Core;
+namespace UltimateEventManager\Core;
 
 class Deactivator {
     public static function deactivate() {

@@ -1,5 +1,5 @@
 <?php
-namespace MemberDirectory\Helpers;
+namespace UltimateEventManager\Helpers;
 
 class RelationshipHelper {
     public static function get_teams_for_member(int $member_id): array {

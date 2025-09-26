@@ -1,6 +1,6 @@
 <?php
 /** @var WP_Post $post */
-use MemberDirectory\Helpers\RelationshipHelper;
+use UltimateEventManager\Helpers\RelationshipHelper;
 
 $status = get_post_meta($post->ID, '_member_status', true);
 if (strtolower($status) !== 'active') {

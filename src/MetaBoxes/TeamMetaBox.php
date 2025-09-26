@@ -1,5 +1,5 @@
 <?php
-namespace MemberDirectory\MetaBoxes;
+namespace UltimateEventManager\MetaBoxes;
 
 class TeamMetaBox implements MetaBoxInterface {
     public function register(): void {

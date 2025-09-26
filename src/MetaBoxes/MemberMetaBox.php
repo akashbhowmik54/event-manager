@@ -1,5 +1,5 @@
 <?php
-namespace MemberDirectory\MetaBoxes;
+namespace UltimateEventManager\MetaBoxes;
 
 class MemberMetaBox implements MetaBoxInterface {
     public function register(): void {

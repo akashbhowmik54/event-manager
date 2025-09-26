@@ -1,5 +1,5 @@
 <?php
-namespace MemberDirectory\Controllers\PostTypes;
+namespace UltimateEventManager\Controllers\PostTypes;
 
 class TeamPostType {
     public function register() {

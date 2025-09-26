@@ -1,16 +1,16 @@
 <?php
-namespace MemberDirectory\Core;
+namespace UltimateEventManager\Core;
 
-use MemberDirectory\Controllers\PostTypes\MemberPostType;
-use MemberDirectory\Controllers\PostTypes\TeamPostType;
-use MemberDirectory\MetaBoxes\MemberMetaBox;
-use MemberDirectory\MetaBoxes\TeamMetaBox;
-use MemberDirectory\Admin\AdminAssets;
-use MemberDirectory\Core\Hooks;
-use MemberDirectory\Admin\MemberAdminColumns;
-use MemberDirectory\Handlers\ContactFormHandler;
-use MemberDirectory\Handlers\MemberSubmissionHandler;
-use MemberDirectory\Frontend\FrontendAssets;
+use UltimateEventManager\Controllers\PostTypes\MemberPostType;
+use UltimateEventManager\Controllers\PostTypes\TeamPostType;
+use UltimateEventManager\MetaBoxes\MemberMetaBox;
+use UltimateEventManager\MetaBoxes\TeamMetaBox;
+use UltimateEventManager\Admin\AdminAssets;
+use UltimateEventManager\Core\Hooks;
+use UltimateEventManager\Admin\MemberAdminColumns;
+use UltimateEventManager\Handlers\ContactFormHandler;
+use UltimateEventManager\Handlers\MemberSubmissionHandler;
+use UltimateEventManager\Frontend\FrontendAssets;
 
 class Plugin {
     public static function init(): void {

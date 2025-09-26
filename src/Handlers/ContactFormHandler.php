@@ -1,6 +1,6 @@
 <?php
 
-namespace MemberDirectory\Handlers;
+namespace UltimateEventManager\Handlers;
 
 class ContactFormHandler {
     public static function init(): void {

@@ -1,5 +1,5 @@
 <?php
-namespace MemberDirectory\Admin;
+namespace UltimateEventManager\Admin;
 
 class AdminAssets {
     public function register(): void {

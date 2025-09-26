@@ -1,6 +1,6 @@
 <?php
 
-namespace MemberDirectory\Helpers;
+namespace UltimateEventManager\Helpers;
 
 class MemberHelper {
     public static function get_member_by_slug(string $slug): ?\WP_Post {

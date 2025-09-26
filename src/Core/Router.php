@@ -1,6 +1,6 @@
 <?php
 
-namespace MemberDirectory\Core;
+namespace UltimateEventManager\Core;
 
 class Router {
     public function register() {

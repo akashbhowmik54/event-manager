@@ -1,5 +1,5 @@
 <?php
-namespace MemberDirectory\Frontend;
+namespace UltimateEventManager\Frontend;
 
 class FrontendAssets {
     public function register(): void {

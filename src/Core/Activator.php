@@ -1,5 +1,5 @@
 <?php
-namespace MemberDirectory\Core;
+namespace UltimateEventManager\Core;
 
 class Activator {
     public static function activate() {

@@ -1,5 +1,5 @@
 <?php
-namespace MemberDirectory\MetaBoxes;
+namespace UltimateEventManager\MetaBoxes;
 
 interface MetaBoxInterface {
     public function register(): void;

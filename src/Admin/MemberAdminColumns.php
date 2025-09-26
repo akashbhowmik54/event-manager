@@ -1,5 +1,5 @@
 <?php
-namespace MemberDirectory\Admin;
+namespace UltimateEventManager\Admin;
 
 class MemberAdminColumns {
     public function register(): void {

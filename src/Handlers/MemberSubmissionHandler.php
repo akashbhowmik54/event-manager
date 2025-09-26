@@ -1,6 +1,6 @@
 <?php
 
-namespace MemberDirectory\Handlers;
+namespace UltimateEventManager\Handlers;
 
 class MemberSubmissionHandler {
     public function register(): void {
