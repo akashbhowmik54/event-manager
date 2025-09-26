@@ -13,7 +13,7 @@ class AdminAssets {
             wp_enqueue_media();
             wp_enqueue_script(
                 'member-media-upload',
-                AKB_MEMBER_DIRECTORY_URL . 'assets/js/member-meta-box.js',
+                ULMR_EVENT_MANAGER_URL . 'assets/js/member-meta-box.js',
                 ['jquery'],
                 '1.0.0',
                 true
@@ -21,7 +21,7 @@ class AdminAssets {
 
             wp_enqueue_style(
                 'admin-styles',
-                AKB_MEMBER_DIRECTORY_URL . 'assets/css/admin-style.css', 
+                ULMR_EVENT_MANAGER_URL . 'assets/css/admin-style.css', 
                 [],
                 '1.0.0', 
                 'all' 

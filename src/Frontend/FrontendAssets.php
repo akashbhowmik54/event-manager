@@ -9,7 +9,7 @@ class FrontendAssets {
     public function enqueue_styles(): void {
         wp_enqueue_style(
             'single-member-style',
-            AKB_MEMBER_DIRECTORY_URL . 'assets/css/single-member.css',
+            ULMR_EVENT_MANAGER_URL . 'assets/css/single-member.css',
             [],
             '1.0',
             'all'
@@ -17,7 +17,7 @@ class FrontendAssets {
 
         wp_enqueue_style(
             'single-team-style',
-            AKB_MEMBER_DIRECTORY_URL . 'assets/css/single-team.css',
+            ULMR_EVENT_MANAGER_URL . 'assets/css/single-team.css',
             [],
             '1.0',
             'all'
@@ -25,7 +25,7 @@ class FrontendAssets {
 
         wp_enqueue_style(
             'archive-member-style',
-            AKB_MEMBER_DIRECTORY_URL . 'assets/css/archive-member.css',
+            ULMR_EVENT_MANAGER_URL . 'assets/css/archive-member.css',
             [],
             '1.0',
             'all'
@@ -33,7 +33,7 @@ class FrontendAssets {
 
         wp_enqueue_style(
             'archive-team-style',
-            AKB_MEMBER_DIRECTORY_URL . 'assets/css/archive-team.css',
+            ULMR_EVENT_MANAGER_URL . 'assets/css/archive-team.css',
             [],
             '1.0',
             'all'
