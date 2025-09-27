@@ -53,6 +53,7 @@ class ContactFormHandler {
             if ( ! empty( $_FILES['event_image']['name'] ) ) {
                 require_once ABSPATH . 'wp-admin/includes/file.php';
                 require_once ABSPATH . 'wp-admin/includes/image.php';
+                require_once ABSPATH . 'wp-admin/includes/media.php';
 
                 $upload = media_handle_upload( 'event_image', $post_id );
                 if ( ! is_wp_error( $upload ) ) {

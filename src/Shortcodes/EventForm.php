@@ -8,7 +8,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 class EventForm {
 
     public function __construct() {
-        add_shortcode( 'event_submission_form', [ $this, 'render_form' ] );
+        add_action('init', [$this, 'register_shortcode']);
+    }
+
+    public function register_shortcode() {
+        add_shortcode('event_submission_form', [$this, 'render_form']);
     }
 
     /**
@@ -73,7 +77,8 @@ class EventForm {
                     'id'       => 'event_category',
                     'class'    => 'postform',
                     'required' => true,
-                    'show_option_none' => 'Select Category'
+                    'show_option_none' => 'Select Category',
+                    'hide_empty'    => false,
                 ]);
                 ?>
             </p>

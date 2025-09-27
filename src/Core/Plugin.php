@@ -4,6 +4,7 @@ namespace UltimateEventManager\Core;
 use UltimateEventManager\PostTypes\EventPostType;
 use UltimateEventManager\MetaBoxes\EventMetaBox;
 use UltimateEventManager\Handlers\ContactFormHandler;
+use UltimateEventManager\Shortcodes\EventForm;
 
 class Plugin {
     public static function init(): void {
@@ -14,6 +15,7 @@ class Plugin {
         (new EventMetaBox())->register();
 
         new ContactFormHandler();
+        new EventForm();
         
     }
     private static function load_dependencies(): void {
