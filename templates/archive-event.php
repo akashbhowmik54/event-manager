@@ -25,6 +25,10 @@ get_header(); ?>
             <p><?php esc_html_e( 'No events found.', 'ultimate-event-manager' ); ?></p>
         <?php endif; ?>
     </div>
+    <div class="ak-event-form">
+        <h2><?php esc_html_e( 'Submit Your Event', 'ultimate-event-manager' ); ?></h2>
+        <?php echo do_shortcode('[event_submission_form]'); ?>
+    </div>
 </div>
 
 <?php get_footer(); ?>
