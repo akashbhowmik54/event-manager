@@ -1,0 +1,124 @@
+/* Archive Event Page */
+.ak-event-archive {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.ak-event-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.ak-event-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.ak-event-subtitle {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.ak-event-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-bottom: 50px;
+}
+
+.ak-event-card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+.ak-event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.ak-event-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.ak-event-thumb img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.ak-event-content {
+    padding: 20px;
+}
+
+.ak-event-name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.ak-event-date,
+.ak-event-category {
+    font-size: 0.95rem;
+    color: #666;
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.ak-event-date i,
+.ak-event-category i {
+    color: #0073aa;
+}
+
+.ak-event-pagination {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.ak-no-events {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #888;
+}
+
+/* Form Section */
+.ak-event-form {
+    background: #f9f9f9;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    margin-top: 50px;
+}
+
+.ak-event-form h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.ak-event-form p {
+    text-align: center;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .ak-event-title {
+        font-size: 2rem;
+    }
+    .ak-event-name {
+        font-size: 1.1rem;
+    }
+}
