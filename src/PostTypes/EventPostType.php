@@ -65,9 +65,11 @@ class EventPostType {
             'hierarchical' => true,
             'labels' => $labels,
             'show_ui' => true,
+            'show_in_rest' => true,
             'show_admin_column' => true,
             'query_var' => true,
             'rewrite' => array( 'slug' => 'event-category' ),
+            'meta_box_cb' => 'post_categories_meta_box',
         );
 
         register_taxonomy( 'event_category', array( 'event' ), $args );
