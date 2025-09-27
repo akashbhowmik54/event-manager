@@ -1,4 +1,3 @@
-/* Basic Reset and Styling */
 .ak-event-form {
     max-width: 600px;
     width: 100%;
@@ -11,14 +10,12 @@
     color: #333;
 }
 
-/* Form Row Layout */
 .ak-form-row {
     margin-bottom: 18px;
     display: flex;
     flex-direction: column;
 }
 
-/* Inline columns for inline row */
 .ak-form-inline {
     display: flex;
     gap: 20px;
@@ -30,14 +27,12 @@
     min-width: 200px;
 }
 
-/* Labels */
 .ak-event-form label {
     font-weight: 600;
     margin-bottom: 6px;
     color: #222;
 }
 
-/* Inputs, textarea, and select */
 .ak-event-form input[type="text"],
 .ak-event-form input[type="datetime-local"],
 .ak-event-form input[type="number"],
@@ -62,13 +57,11 @@
     box-shadow: 0 0 6px #a3c4f3;
 }
 
-/* Textarea */
 .ak-event-form textarea {
     min-height: 90px;
     resize: vertical;
 }
 
-/* Submit Button */
 .ak-submit-btn {
     background: #4a90e2;
     color: #fff;
@@ -87,13 +80,11 @@
     background: #357abd;
 }
 
-/* Placeholder color */
 .ak-event-form input::placeholder,
 .ak-event-form textarea::placeholder {
     color: #999;
 }
 
-/* Responsive Design */
 @media (max-width: 600px) {
     .ak-form-inline {
         flex-direction: column;

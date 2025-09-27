@@ -1,4 +1,3 @@
-/* Container */
 .ak-event-single {
     max-width: 900px;
     width: 95%;
@@ -11,7 +10,6 @@
     font-family: 'Segoe UI', Roboto, Arial, sans-serif;
 }
 
-/* Title */
 .ak-event-single h1 {
     font-size: 2.4rem;
     margin-bottom: 15px;
@@ -19,7 +17,6 @@
     text-align: center;
 }
 
-/* Event Image */
 .ak-event-image {
     text-align: center;
     margin-bottom: 25px;
@@ -31,7 +28,6 @@
     border-radius: 10px;
 }
 
-/* Event Details */
 .ak-event-details {
     background: #f9f9f9;
     padding: 20px;
@@ -51,7 +47,6 @@
     display: inline-block;
 }
 
-/* Event Form Wrapper */
 .ak-event-form {
     margin-top: 40px;
 }
@@ -68,7 +63,6 @@
     color: #555;
 }
 
-/* Form Fields */
 .ak-event-form-wrapper {
     width: 100%;
 }
@@ -112,7 +106,7 @@
 
 .ak-form-inline .ak-form-col {
     flex: 1;
-    min-width: 0; /* prevent overflow */
+    min-width: 0; 
 }
 
 .ak-submit-btn {
@@ -130,7 +124,6 @@
     background: #005177;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
     .ak-form-inline {
         flex-direction: column;
