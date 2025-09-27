@@ -20,13 +20,15 @@ require_once __DIR__ . '/vendor/autoload.php';
 
 use UltimateEventManager\Core\Plugin;
 use UltimateEventManager\PostTypes\EventPostType;
+use UltimateEventManager\Core\Router;
 
 // Activation/Deactivation
 register_activation_hook(__FILE__, [EventPostType::class, 'activate']);
 register_deactivation_hook(__FILE__, [EventPostType::class, 'deactivate']);
 
 
-function member_directory_init() {
+function event_manager_init() {
     Plugin::init();
+    (new Router())->register();
 }
-add_action( 'plugins_loaded', 'member_directory_init' );
+add_action( 'plugins_loaded', 'event_manager_init' );

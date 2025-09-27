@@ -4,7 +4,7 @@ namespace UltimateEventManager\MetaBoxes;
 class EventMetaBox {
     public function register(): void {
         add_action('add_meta_boxes', [$this, 'add_meta_boxes']);
-        add_action('save_post_event', [$this, 'save_meta_boxes']);
+        add_action('save_post_event', [$this, 'save_meta_boxes'], 10, 2);
     }
 
     /**
@@ -61,6 +61,41 @@ class EventMetaBox {
         </p>
 
         <?php
+    }
+
+    public function save_meta_boxes( $post_id, $post ) {
+
+        if ( ! isset( $_POST['event_details_nonce'] ) || ! wp_verify_nonce( sanitize_text_field( wp_unslash( $_POST['event_details_nonce'] ) ), 'event_details_nonce_action' ) ) {
+            return;
+        }
+
+        if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) {
+            return;
+        }
+
+        if ( ! current_user_can( 'edit_post', $post_id ) ) {
+            return;
+        }
+
+        if ( isset( $_POST['event_organizer'] ) ) {
+            update_post_meta( $post_id, '_event_organizer', sanitize_text_field( wp_unslash( $_POST['event_organizer'] ) ) );
+        }
+
+        if ( isset( $_POST['event_date_time'] ) ) {
+            update_post_meta( $post_id, '_event_date_time', sanitize_text_field( wp_unslash( $_POST['event_date_time'] ) ) );
+        }
+
+        if ( isset( $_POST['event_participants'] ) ) {
+            update_post_meta( $post_id, '_event_participants', absint( $_POST['event_participants'] ) );
+        }
+
+        if ( isset( $_POST['event_location'] ) ) {
+            update_post_meta( $post_id, '_event_location', sanitize_text_field( wp_unslash( $_POST['event_location'] ) ) );
+        }
+
+        if ( isset( $_POST['event_notes'] ) ) {
+            update_post_meta( $post_id, '_event_notes', sanitize_textarea_field( wp_unslash( $_POST['event_notes'] ) ) );
+        }
     }
 
 }
