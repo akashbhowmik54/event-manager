@@ -1,0 +1,105 @@
+/* Basic Reset and Styling */
+.ak-event-form {
+    max-width: 600px;
+    width: 100%;
+    margin: 30px auto;
+    background: #fff;
+    padding: 25px 30px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+/* Form Row Layout */
+.ak-form-row {
+    margin-bottom: 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Inline columns for inline row */
+.ak-form-inline {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.ak-form-col {
+    flex: 1;
+    min-width: 200px;
+}
+
+/* Labels */
+.ak-event-form label {
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #222;
+}
+
+/* Inputs, textarea, and select */
+.ak-event-form input[type="text"],
+.ak-event-form input[type="datetime-local"],
+.ak-event-form input[type="number"],
+.ak-event-form input[type="file"],
+.ak-event-form textarea,
+.ak-event-form select.postform {
+    padding: 10px 12px;
+    border: 1.8px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.ak-event-form input[type="text"]:focus,
+.ak-event-form input[type="datetime-local"]:focus,
+.ak-event-form input[type="number"]:focus,
+.ak-event-form input[type="file"]:focus,
+.ak-event-form textarea:focus,
+.ak-event-form select.postform:focus {
+    border-color: #4a90e2;
+    outline: none;
+    box-shadow: 0 0 6px #a3c4f3;
+}
+
+/* Textarea */
+.ak-event-form textarea {
+    min-height: 90px;
+    resize: vertical;
+}
+
+/* Submit Button */
+.ak-submit-btn {
+    background: #4a90e2;
+    color: #fff;
+    font-weight: 600;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.ak-submit-btn:hover,
+.ak-submit-btn:focus {
+    background: #357abd;
+}
+
+/* Placeholder color */
+.ak-event-form input::placeholder,
+.ak-event-form textarea::placeholder {
+    color: #999;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .ak-form-inline {
+        flex-direction: column;
+    }
+
+    .ak-form-col {
+        min-width: 100%;
+    }
+}

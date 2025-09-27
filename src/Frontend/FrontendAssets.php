@@ -9,7 +9,7 @@ class FrontendAssets {
 
     public function enqueue_styles(): void {
         wp_enqueue_style(
-            'single-member-style',
+            'single-event-style',
             ULMR_EVENT_MANAGER_URL . 'assets/css/single-event.css',
             [],
             '1.0',
@@ -17,8 +17,16 @@ class FrontendAssets {
         );
 
         wp_enqueue_style(
-            'archive-member-style',
+            'archive-event-style',
             ULMR_EVENT_MANAGER_URL . 'assets/css/archive-event.css',
+            [],
+            '1.0',
+            'all'
+        );
+
+        wp_enqueue_style(
+            'event-form-style',
+            ULMR_EVENT_MANAGER_URL . 'assets/css/event-form.css',
             [],
             '1.0',
             'all'

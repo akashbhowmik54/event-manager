@@ -92,22 +92,15 @@
 }
 
 /* Form Section */
-.ak-event-form {
-    background: #f9f9f9;
-    padding: 40px 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-    margin-top: 50px;
-}
 
-.ak-event-form h2 {
+.ak-event-form-wrapper h2 {
     font-size: 1.8rem;
     font-weight: 700;
     margin-bottom: 10px;
     text-align: center;
 }
 
-.ak-event-form p {
+.ak-event-form-wrapper p {
     text-align: center;
     color: #555;
     margin-bottom: 20px;
