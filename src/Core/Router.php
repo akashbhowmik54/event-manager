@@ -4,7 +4,7 @@ namespace UltimateEventManager\Core;
 
 class Router {
     public function register() {
-        add_filter('template_include', [__CLASS__, 'load_templates']);
+        add_filter('template_include', [$this, 'load_templates']);
     }
 
     /**

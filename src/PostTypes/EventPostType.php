@@ -34,7 +34,7 @@ class EventPostType {
         'show_ui' => true,
         'show_in_menu' => true,
         'query_var' => true,
-        'rewrite' => array( 'slug' => 'event' ),
+        'has_archive' => true,
         'capability_type' => 'event',
         'map_meta_cap' => true,
         'supports' => array( 'title', 'editor', 'thumbnail' ),
