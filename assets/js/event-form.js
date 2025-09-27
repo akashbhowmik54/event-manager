@@ -2,6 +2,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById("eventForm");
     if (!form) return; 
 
+    const msgContainer = document.createElement("div");
+    msgContainer.classList.add("ak-form-message");
+    form.appendChild(msgContainer);
+
     form.addEventListener("submit", async function (e) {
         e.preventDefault();
         
@@ -16,13 +20,22 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
         let result = await response.json();
-        console.log(result);
+
+        msgContainer.textContent = result.message;
+        msgContainer.style.display = "block";
+        msgContainer.style.opacity = "1";
 
         if (result.success) {
-            alert('Event submitted successfully!');
+            msgContainer.style.color = "green";
             this.reset();
         } else {
-            alert('Error: ' + result.message);
+            msgContainer.style.color = "red";
         }
+
+        setTimeout(() => {
+            msgContainer.style.transition = "opacity 0.5s";
+            msgContainer.style.opacity = "0";
+            setTimeout(() => { msgContainer.style.display = "none"; }, 500);
+        }, 3000);
     });
 });

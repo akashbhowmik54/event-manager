@@ -1,0 +1,155 @@
+/* Container */
+.ak-event-single {
+    max-width: 900px;
+    width: 95%;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+}
+
+/* Title */
+.ak-event-single h1 {
+    font-size: 2.4rem;
+    margin-bottom: 15px;
+    color: #222;
+    text-align: center;
+}
+
+/* Event Image */
+.ak-event-image {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.ak-event-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Event Details */
+.ak-event-details {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 35px;
+}
+
+.ak-event-details p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+.ak-event-details strong {
+    color: #111;
+    width: 120px;
+    display: inline-block;
+}
+
+/* Event Form Wrapper */
+.ak-event-form {
+    margin-top: 40px;
+}
+
+.ak-event-form h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.ak-event-form p {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #555;
+}
+
+/* Form Fields */
+.ak-event-form-wrapper {
+    width: 100%;
+}
+
+.ak-event-form-wrapper * {
+    box-sizing: border-box;
+}
+
+.ak-form-row {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.ak-form-row label {
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #333;
+}
+
+.ak-form-row input,
+.ak-form-row select,
+.ak-form-row textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+.ak-form-row textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.ak-form-inline {
+    display: flex;
+    gap: 15px;
+}
+
+.ak-form-inline .ak-form-col {
+    flex: 1;
+    min-width: 0; /* prevent overflow */
+}
+
+.ak-submit-btn {
+    background: #0073aa;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.ak-submit-btn:hover {
+    background: #005177;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .ak-form-inline {
+        flex-direction: column;
+    }
+
+    .ak-event-single {
+        padding: 15px;
+        margin: 20px auto;
+    }
+
+    .ak-event-details p {
+        font-size: 0.95rem;
+    }
+
+    .ak-event-single h1 {
+        font-size: 2rem;
+    }
+
+    .ak-event-form h2 {
+        font-size: 1.5rem;
+    }
+}
