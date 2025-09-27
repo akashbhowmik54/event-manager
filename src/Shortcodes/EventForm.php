@@ -25,7 +25,7 @@ class EventForm {
 
         ob_start(); ?>
 
-        <form method="post" enctype="multipart/form-data">
+        <form id="eventForm" method="post" enctype="multipart/form-data">
             <?php wp_nonce_field( 'event_form_action', 'event_form_nonce' ); ?>
 
             <p>
