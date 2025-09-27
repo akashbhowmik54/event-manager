@@ -59,3 +59,7 @@ Initial release of Ultimate Event Manager. All features are included.
 
 == Additional Notes ==
 - For better performance, use a caching plugin if your site has many events.
+
+== Credits ==
+
+Developed by Akash Kumar Bhowmik.
