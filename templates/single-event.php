@@ -14,7 +14,7 @@ get_header(); ?>
     <?php endif; ?>
 
     <div class="ak-event-details">
-        <p><strong><?php esc_html_e( 'Description:', 'ultimate-event-manager' ); ?></strong> <?php echo esc_html( get_the_content() ); ?></p>
+        <p><strong><?php esc_html_e( 'Description:', domain: 'ultimate-event-manager' ); ?></strong> <?php echo apply_filters( 'the_content', get_the_content() ); ?></p>
         <p><strong><?php esc_html_e( 'Organizer:', 'ultimate-event-manager' ); ?></strong> <?php echo esc_html( get_post_meta( get_the_ID(), '_event_organizer', true ) ); ?></p>
         <p>
             <strong><?php esc_html_e( 'Date & Time:', 'ultimate-event-manager' ); ?>
