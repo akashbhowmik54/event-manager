@@ -38,14 +38,38 @@ class ContactFormHandler {
      * Handle submission
      */
     public function handle_form_submission( \WP_REST_Request $request ) {
-        $event_title        = sanitize_text_field( $request['event_title'] );
-        $event_description  = sanitize_textarea_field( $request['event_description'] );
-        $organizer_name     = sanitize_text_field( $request['organizer_name'] );
-        $event_date         = sanitize_text_field( $request['event_date'] );
-        $event_participants = intval( $request['event_participants'] );
-        $event_location     = sanitize_text_field( $request['event_location'] );
-        $event_notes        = sanitize_textarea_field( $request['event_notes'] );
-        $event_category     = intval( $request['event_category'] );
+        $event_title        = isset( $request['event_title'] ) && ! empty( $request['event_title'] ) 
+                                ? sanitize_text_field( $request['event_title'] ) 
+                                : '';
+
+        $event_description  = isset( $request['event_description'] ) && ! empty( $request['event_description'] ) 
+                                ? sanitize_textarea_field( $request['event_description'] ) 
+                                : '';
+
+        $organizer_name     = isset( $request['organizer_name'] ) && ! empty( $request['organizer_name'] ) 
+                                ? sanitize_text_field( $request['organizer_name'] ) 
+                                : '';
+
+        $event_date         = isset( $request['event_date'] ) && ! empty( $request['event_date'] ) 
+                                ? sanitize_text_field( $request['event_date'] ) 
+                                : '';
+
+        $event_participants = isset( $request['event_participants'] ) && ! empty( $request['event_participants'] ) 
+                                ? intval( $request['event_participants'] ) 
+                                : 0;
+
+        $event_location     = isset( $request['event_location'] ) && ! empty( $request['event_location'] ) 
+                                ? sanitize_text_field( $request['event_location'] ) 
+                                : '';
+
+        $event_notes        = isset( $request['event_notes'] ) && ! empty( $request['event_notes'] ) 
+                                ? sanitize_textarea_field( $request['event_notes'] ) 
+                                : '';
+
+        $event_category     = isset( $request['event_category'] ) && ! empty( $request['event_category'] ) 
+                                ? intval( $request['event_category'] ) 
+                                : 0;
+
 
         $post_id = wp_insert_post([
             'post_title'   => $event_title,
